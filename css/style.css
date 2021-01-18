@@ -1,0 +1,154 @@
+*{padding:0;margin:0;}
+
+body {
+  margin: 20px 0 60px;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-family: Verdana, sans-serif;
+  background: #eee;  /*background: #eee url(../img/bg.jpg) top repeat-x;*/
+  text-align: center;
+}
+
+/***************************************/
+/* main layers ***************************/
+/***************************************/
+
+#box {
+  position: relative;
+  margin: 0 auto;
+  width: 750px;
+  background: #eee; /*background: url(../img/bg_box_logo.gif) bottom right no-repeat;*/
+}
+
+#header{text-align:left;background: url(../img/bg_main_top.gif) no-repeat;padding-top:10px;}
+#headerBot{background: url(../img/bg_main_bot.gif) bottom right no-repeat;padding-bottom:20px;text-align:center;}
+
+#main{text-align:left;background: url(../img/bg_main_top.gif) no-repeat;padding-top:30px;margin-top:15px;}
+#mainBot{background: url(../img/bg_main_bot.gif) bottom right no-repeat;padding-bottom:30px;}
+
+#frontpage{padding:0 15px 35px 35px;}
+#splashpic{float:left;}
+#frontpage_text{float:right;padding:50px 50px 0 0;}
+
+#crumbs{margin-left:50px; margin-right: 50px; padding-bottom:20px;}
+
+#mainLft{float:left;display:inline;width:215px;margin-left:25px;padding-top:0px;text-align:center;}
+#mainRgt{float:right;display:inline;width:460px;margin-right:25px;}
+
+#categories ul{list-style:none;padding-top:40px;margin:0;line-height:20px;font-size:20px;text-align:center;}
+#categories li{padding-bottom:40px;}
+#booklist ul li {list-style:none;padding:0;margin-top:30px;line-height:25px;}
+#booklist ul li ul li {list-style:none;padding:0;margin:0 0 0 0px;line-height:25px;}
+#toc ul{list-style:none;padding:20px 0;margin:0;}
+
+#scroller{margin-top:20px;}
+#scroller ul{list-style:none;padding:0;margin:0;}
+#scroller ul li{display:inline;padding-right:60px;}
+
+#row2Don{text-align:left;background: url(../img/bg_row2don_top.gif) no-repeat;margin-top:15px;padding-top:15px;}
+#row2DonBot{background: url(../img/bg_row2don_bot.gif) bottom right no-repeat;padding-bottom:15px;}
+#row2DonRgt{float:right;display:inline;width:270px;margin-right:0px;padding-right:15px;}
+
+#row2AbtDon{text-align:left;background: url(../img/bg_row2abtdon_top.gif) no-repeat;margin-top:15px;padding-top:15px;}
+#row2AbtDonBot{background: url(../img/bg_row2abtdon_bot.gif) bottom right no-repeat;padding-bottom:15px;}
+#row2AbtLft{float:left;display:inline;width:390px;margin-left:25px;}
+
+#copyright{float:right;margin-top:15px;font-size:9px;color:#999;}
+
+/* Genius "no-extra-markup" clearing by Tony Aslett - www.csscreator.com */
+/* add clearfix class to any containter that must enclose floated elements */
+/* explained at http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+content: ".";              /* the period is placed on the page as the last thing before the div closes */
+display: block;          /* inline elements don't respond to the clear property */ 
+height: 0;                  /* ensure the period is not visible */
+clear: both;               /* make the container clear the period */
+visibility: hidden;	     /* further ensures the period is not visible */
+}
+.clearfix {display: inline-block;}   /* a fix for IE Mac */
+/* fix for Guillotine bug in IE6 */
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* end of "no-extra-markup" clearing method */
+
+/***************************************/
+/* text styles ****************************/
+/***************************************/
+
+#toc ul li {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-top: 1rem;
+  font-family: georgia,serif;  
+}
+
+h1.quote {
+  color: #900;
+  text-align: left;
+  margin-left: 1rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  font-family: georgia,serif;  
+}
+
+h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  font-family: georgia,serif;  
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  font-family: georgia,serif;  
+}
+
+h3.byline {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: georgia,serif;  
+}
+
+p {
+  margin: 10px 0;
+}
+
+a, a:link, a:visited, a:active{
+  color: #69C;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #333;
+}
+
+a #header {
+  color: #000;
+}
+
+/*a.link_book{padding:3px 0 3px 25px;background: url(../img/book.png) left no-repeat;}
+a.link_video{padding:3px 0 3px 25px;background: url(../img/video.png) left no-repeat;}*/
+a.download_book{padding:3px 0 3px 20px;background: url(../img/download_book.png) left no-repeat;font-size:1rem;}
+a.download_video{padding:3px 0 3px 20px;background: url(../img/download_video.png) left no-repeat;font-size:1rem;}
+a.bullet_prev{padding:3px 0 3px 20px;background: url(../img/bullet_prev.png) left no-repeat;}
+a.bullet_next{padding:3px 20px 3px 0;background: url(../img/bullet_next.png) right no-repeat;}
+a.donate{padding:3px 0 3px 22px;background: url(../img/heart.png) left no-repeat;}
+
+a img {
+  border: 0px;
+}
